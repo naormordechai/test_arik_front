@@ -27,5 +27,13 @@
   "main": "index.js",
   "devDependencies": {},
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naormordechai/test_arik_front.git"
+  },
+  "bugs": {
+    "url": "https://github.com/naormordechai/test_arik_front/issues"
+  },
+  "homepage": "https://github.com/naormordechai/test_arik_front#readme"
 }

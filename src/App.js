@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
+import RecordList from './components/RecordList/RecordList'
 import RecordService from './services/RecordService'
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
@@ -23,17 +23,11 @@ class App extends Component {
   }
 
   render() {
+    const { records } = this.state
     return (
       <div>
         <h2>Records</h2>
-        <div>
-          {this.state.records.map(record => (
-            <div key={record._id}>
-              <audio src={record.src} controls={true} autoPlay={false}></audio>
-            </div>
-          ))}
-        </div>
-        <div>test1 <span>2</span></div>
+        <RecordList records={records} />
       </div>
     );
   }
