@@ -6,7 +6,7 @@ const recordList = ({records}) => (
         {records.map(record => (
             <div style={{display:'flex', alignItems:'center'}} key={record._id}>
                 <RecordPreview record={record}/>
-                <div> time: {record.stopTimestamp - record.startTimestamp} sec</div> 
+                <div> time: {record.stopTimestamp - record.startTimestamp} ms</div> 
             </div>
         ))}
     </div>
